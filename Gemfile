@@ -14,6 +14,13 @@ gem 'coffee-rails', '~> 4.2'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 
+# For Bootstrap theme
+gem 'therubyracer'
+gem 'less-rails-bootstrap'
+gem "font-awesome-rails"
+gem 'jquery-rails'
+gem 'jquery-easing-rails'
+
 
 group :development, :test do
 
