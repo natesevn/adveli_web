@@ -21,3 +21,5 @@
 .DS_Store
 app/.DS_Store
 app/assets/.DS_Store
+
+app/assets/stylesheets/creative.min.backup
