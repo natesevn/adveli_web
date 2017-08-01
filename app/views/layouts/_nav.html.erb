@@ -12,13 +12,19 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <a class="page-scroll" href="#about">About</a>
+                    <a class="page-scroll" href=<%= yield(:about) %>>About</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#features">Features</a>
+                    <a class="page-scroll" href=<%= yield(:features) %>>Features</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#contact">Contact</a>
+                    <a class="page-scroll" href="media">Media</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="jobs">Jobs</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href=<%= yield(:contact) %>>Contact</a>
                 </li>
             </ul>
         </div>
