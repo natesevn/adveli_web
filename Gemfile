@@ -21,6 +21,8 @@ gem "font-awesome-rails"
 gem 'jquery-rails'
 gem 'jquery-easing-rails'
 
+gem 'rails-controller-testing'
+
 
 group :development, :test do
 

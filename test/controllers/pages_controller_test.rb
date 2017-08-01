@@ -10,9 +10,9 @@ class PagesControllerTest < ActionDispatch::IntegrationTest
   	get root_path
   	assert_response :success
 
-	assert_select "section#about"
-	assert_select "section#features"
-	assert_select "section#contact"
+  	assert_select "section#about"
+  	assert_select "section#features"
+  	assert_select "section#contact"
   end
 
 end
