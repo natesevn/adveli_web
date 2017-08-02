@@ -8,7 +8,7 @@ end
 # Default gems
 gem 'rails', '~> 5.1.2'
 gem 'puma', '~> 3.7'
-gem 'sass-rails', '~> 5.0'
+gem 'sass-rails', '~> 5.0', '>= 5.0.6'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.2'
 gem 'turbolinks', '~> 5'
@@ -20,6 +20,8 @@ gem 'less-rails-bootstrap'
 gem "font-awesome-rails"
 gem 'jquery-rails'
 gem 'jquery-easing-rails'
+
+gem 'sprockets', '3.6.3'
 
 gem 'rails-controller-testing'
 

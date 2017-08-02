@@ -1,24 +1,58 @@
+<% provide(:adveli, "/") %>
+<% provide(:about, "/#about") %>
+<% provide(:features, "/#features") %>
+<% provide(:contact, "/#contact") %>
+
+<%= render 'layouts/nav' %>
+
+<header style="min-height: 50%">
+    <div class="header-content">
+        <div class="header-content-inner">
+            <h1 id="jobHeading">Careers at Adveli</h1>
+            <hr>
+            <p>Adveli is the First and Only SaaS Cloud Computing software tool application in the world designed for K-12 institutions.</p>
+        </div>
+    </div>
+</header>
+
+<section class="bg" id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+
+            	<p>
+				  <h3 style="margin-bottom: 0px">Role:</h3>
+				  <br>
+				  <%= @job.role %>
+				</p>
+				<br>
+
+				<p>
+				  <h3 style="margin-bottom: 0px">About you:</h3>
+				  <br>
+				  <%= @job.about_you %>
+				</p>
+				<br>
+
+				<p>
+				  <h3 style="margin-bottom: 0px">Requirements:</h3>
+				  <br>
+				  <%= @job.requirements %>
+				</p>
+				<br>
+
+				<p>
+				  <h3 style="margin-bottom: 0px">Location:</h3>
+				  <br>
+				  <%= @job.location %>
+				</p>
+
+            </div>
+        </div>
+    </div>
+</section>
+
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Role:</strong>
-  <%= @job.role %>
-</p>
+<a href="/jobs" class="page-scrol btn btn-default btn-xl sr-button">Back</a>
 
-<p>
-  <strong>About you:</strong>
-  <%= @job.about_you %>
-</p>
-
-<p>
-  <strong>Requirements:</strong>
-  <%= @job.requirements %>
-</p>
-
-<p>
-  <strong>Location:</strong>
-  <%= @job.location %>
-</p>
-
-<%= link_to 'Edit', edit_job_path(@job) %> |
-<%= link_to 'Back', jobs_path %>
