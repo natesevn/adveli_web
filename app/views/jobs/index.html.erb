@@ -25,18 +25,17 @@
           <div class="positions">
 
             <% @jobs.each do |job| %>
-
-              <% if @jobs.last && @jobs.first %>
+              <% if job == @jobs.last && job == @jobs.first %>
                 <div class="position-item-first">
                   <h4 class="position-title"><td><%= link_to job.role, job %></td></h4>
                   <p class="position-location-last"><%= job.location %></p>
                 </div>
-              <% elsif @jobs.first %>
+              <% elsif job == @jobs.first %>
                 <div class="position-item-first">
                   <h4 class="position-title"><td><%= link_to job.role, job %></td></h4>
                   <p class="position-location"><%= job.location %></p>
                 </div>
-              <% elsif @jobs.last %>
+              <% elsif job == @jobs.last %>
                 <div class="position-item">
                   <h4 class="position-title"><td><%= link_to job.role, job %></td></h4>
                   <p class="position-location-last"><%= job.location %></p>

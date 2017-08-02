@@ -10,7 +10,7 @@ class SiteLayoutTest < ActionDispatch::IntegrationTest
   	assert_select "a[href=?]", "#features"
   	assert_select "a[href=?]", "#contact"
   	assert_select "a[href=?]", "media"
-  	assert_select "a[href=?]", "jobs"
+  	assert_select "a[href=?]", "/jobs"
 
   	get media_path
   	assert_template 'static_pages/media'
@@ -19,7 +19,7 @@ class SiteLayoutTest < ActionDispatch::IntegrationTest
   	assert_select "a[href=?]", "/#features"
   	assert_select "a[href=?]", "/#contact"
   	assert_select "a[href=?]", "media"
-  	assert_select "a[href=?]", "jobs"
+  	assert_select "a[href=?]", "/jobs"
 
   	get jobs_path
   	assert_template 'jobs/index'
@@ -28,7 +28,7 @@ class SiteLayoutTest < ActionDispatch::IntegrationTest
   	assert_select "a[href=?]", "/#features"
   	assert_select "a[href=?]", "/#contact"
   	assert_select "a[href=?]", "media"
-  	assert_select "a[href=?]", "jobs"
+  	assert_select "a[href=?]", "/jobs"
   end
 
 end
