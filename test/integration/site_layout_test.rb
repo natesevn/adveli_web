@@ -22,7 +22,7 @@ class SiteLayoutTest < ActionDispatch::IntegrationTest
   	assert_select "a[href=?]", "jobs"
 
   	get jobs_path
-  	assert_template 'static_pages/jobs'
+  	assert_template 'jobs/index'
     assert_select "a[href=?]", "/"
   	assert_select "a[href=?]", "/#about"
   	assert_select "a[href=?]", "/#features"

@@ -5,10 +5,4 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
     get media_path
     assert_response :success
   end
-
-  test "should get jobs" do
-    get jobs_path
-    assert_response :success
-  end
-
 end
