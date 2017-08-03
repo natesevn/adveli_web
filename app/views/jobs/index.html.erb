@@ -17,34 +17,34 @@
     </div>
 </header>
 
-<div class="positions-div">
-  <div class="positions-row">
-    <h2 class="positions-heading">Open Positions:</h2>
+<div class="content-wrapper">
+  <div class="content-inner-wrapper">
+    <h2 class="content-heading">Open Positions:</h2>
     <hr>
-      <ul class="positions-list">
-        <li class="positions-container">
-          <div class="positions">
+      <ul class="content-list">
+        <li class="content-list-container">
+          <div class="jobs">
 
             <% @jobs.each do |job| %>
               <% if job == @jobs.last && job == @jobs.first %>
-                <div class="position-item-first">
-                  <h4 class="position-title"><td><%= link_to job.role, job %></td></h4>
-                  <p class="position-location-last"><%= job.location %></p>
+                <div class="job-item-first">
+                  <h4 class="job-title"><td><%= link_to job.role, job %></td></h4>
+                  <p class="job-location-last"><%= job.location %></p>
                 </div>
               <% elsif job == @jobs.first %>
-                <div class="position-item-first">
-                  <h4 class="position-title"><td><%= link_to job.role, job %></td></h4>
-                  <p class="position-location"><%= job.location %></p>
+                <div class="job-item-first">
+                  <h4 class="job-title"><td><%= link_to job.role, job %></td></h4>
+                  <p class="job-location"><%= job.location %></p>
                 </div>
               <% elsif job == @jobs.last %>
-                <div class="position-item">
-                  <h4 class="position-title"><td><%= link_to job.role, job %></td></h4>
-                  <p class="position-location-last"><%= job.location %></p>
+                <div class="job-item">
+                  <h4 class="job-title"><td><%= link_to job.role, job %></td></h4>
+                  <p class="job-location-last"><%= job.location %></p>
                 </div>
               <% else %>
-                <div class="position-item">
-                  <h4 class="position-title"><td><%= link_to job.role, job %></td></h4>
-                  <p class="position-location"><%= job.location %></p>
+                <div class="job-item">
+                  <h4 class="job-title"><td><%= link_to job.role, job %></td></h4>
+                  <p class="job-location"><%= job.location %></p>
                 </div>
               <% end%>
 
