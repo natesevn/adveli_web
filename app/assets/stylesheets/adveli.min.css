@@ -9,9 +9,19 @@
 }
 
 .content-wrapper {
-  width: 960px; 
+  width: 80%; 
   margin: 0 auto; 
   position: relative;
+}
+
+.content-column-left {
+  float: left;
+  width: 50%;
+}
+
+.content-column-right {
+  float: right;
+  width: 50%;
 }
 
 .content-inner-wrapper {
@@ -21,7 +31,7 @@
 }
 
 .content-media-wrapper {
-  width: 800px; 
+  width: 55%; 
   margin: 0 auto 16px; 
   position: relative
 }
