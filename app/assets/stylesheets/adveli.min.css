@@ -12,6 +12,7 @@
   width: 80%; 
   margin: 0 auto; 
   position: relative;
+  padding: 100px;
 }
 
 .content-column-left {
@@ -72,3 +73,4 @@
   margin-bottom: 0.5rem; 
   padding-bottom: 4rem; 
 }
+
