@@ -1,24 +1,31 @@
-# README
+# Adveli Website
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Intro website for Adveli.
 
-Things you may want to cover:
+## Getting Started
 
-* Ruby version
+Clone the repo, install the gems:
 
-* System dependencies
+```
+$ bundle install --without production
+```
 
-* Configuration
+Migrate database:
 
-* Database creation
+```
+$ rails db:migrate
+```
 
-* Database initialization
+Run test suite for verification:
 
-* How to run the test suite
+```
+$ rails test
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+Start Rails server:
 
-* Deployment instructions
+```
+$ rails server
+```
 
-* ...
+Go to localhost:3000/ in your browser
