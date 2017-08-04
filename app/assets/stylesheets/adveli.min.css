@@ -13,16 +13,19 @@
   margin: 0 auto; 
   position: relative;
   padding: 100px;
+  overflow: auto;
 }
 
 .content-column-left {
   float: left;
   width: 50%;
+  max-height: 100%;
 }
 
 .content-column-right {
   float: right;
   width: 50%;
+  max-height: 100%;
 }
 
 .content-inner-wrapper {
@@ -73,4 +76,54 @@
   margin-bottom: 0.5rem; 
   padding-bottom: 4rem; 
 }
+
+.img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-container img
+{
+    vertical-align: text-top;
+    max-width:70%;
+    max-height:70%;
+}
+
+/*
+ * Row with equal height columns
+ * --------------------------------------------------
+ */
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+}
+
+/*
+ * Styles copied from the Grid example to make grid rows & columns visible.
+ */
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+h4 {
+  margin-top: 25px;
+}
+.row {
+  margin-bottom: 20px;
+}
+.row .row {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+[class*="col-"] {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+
+
 
