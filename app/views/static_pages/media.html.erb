@@ -5,17 +5,13 @@
 <% provide(:contact, "/#contact") %>
 <% provide(:jobs, "/jobs") %>
 
+<% provide(:headerstyle, "min-height: 50%") %>
+<% provide(:heading, "Media") %>
+<% provide(:subheading, "Watch our videos to learn more.") %>
+
 <%= render 'layouts/nav' %>
 
-<header style="min-height: 50%">
-    <div class="header-content">
-        <div class="header-content-inner">
-            <h1 id="jobHeading">Media</h1>
-            <hr>
-            <p>Adveli is the First and Only SaaS Cloud Computing software tool application in the world designed for K-12 institutions.</p>
-        </div>
-    </div>
-</header>
+<%= render 'layouts/header' %>
 
 <div class="content-wrapper" style="">
   <div class="content-inner-wrapper" style="text-align: center">
