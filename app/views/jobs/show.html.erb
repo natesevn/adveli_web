@@ -5,17 +5,13 @@
 <% provide(:contact, "/#contact") %>
 <% provide(:jobs, "/jobs") %>
 
+<% provide(:headerstyle, "min-height: 50%") %>
+<% provide(:heading, "Careers at Adveli") %>
+<% provide(:subheading, "Join us and make the world a better place!") %>
+
 <%= render 'layouts/nav' %>
 
-<header style="min-height: 50%">
-    <div class="header-content">
-        <div class="header-content-inner">
-            <h1 id="jobHeading">Careers at Adveli</h1>
-            <hr>
-            <p>Adveli is the First and Only SaaS Cloud Computing software tool application in the world designed for K-12 institutions.</p>
-        </div>
-    </div>
-</header>
+<%= render 'layouts/header' %>
 
 <section class="bg" id="about">
     <div class="container">
@@ -55,6 +51,8 @@
 </section>
 
 <p id="notice"><%= notice %></p>
+
+<%= render 'layouts/footer' %>
 
 
 

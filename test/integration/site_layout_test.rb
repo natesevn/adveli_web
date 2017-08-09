@@ -48,4 +48,29 @@ class SiteLayoutTest < ActionDispatch::IntegrationTest
     assert_select "a[href=?]", "/jobs"
   end
 
+  test "check if partials have rendered" do
+    get root_path
+    assert_template :partial => '_header'
+    assert_template :partial => '_footer'
+    assert_template :partial => '_nav'
+    assert_template :partial => '_about'
+    assert_template :partial => '_features'
+    assert_template :partial => '_contact'
+
+    get media_path
+    assert_template :partial => '_header'
+    assert_template :partial => '_footer'
+    assert_template :partial => '_nav'
+
+    get jobs_path
+    assert_template :partial => '_header'
+    assert_template :partial => '_footer'
+    assert_template :partial => '_nav'
+
+    get job_path(1)
+    assert_template :partial => '_header'
+    assert_template :partial => '_footer'
+    assert_template :partial => '_nav'
+  end
+
 end
