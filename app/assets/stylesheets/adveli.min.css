@@ -90,6 +90,26 @@
     max-height:70%;
 }
 
+.footer {
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: rgba(34, 34, 34, 1);
+  text-align: center;
+  margin: auto;
+  overflow: hidden;
+}
+
+.left-footer {
+    float: left;
+    margin-left: 5px;
+}
+.right-footer {
+    float: right;
+    margin-right: 5px;
+}
+
 /*
  * Row with equal height columns
  * --------------------------------------------------
