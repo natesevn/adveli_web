@@ -5,6 +5,11 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+# Use sqlite3 as the database for Active Record
+gem 'sqlite3', group: :development # Added development group.
+gem 'pg', group: :production # Added postgres and made it production only.
+gem 'rails_12factor'
+
 # Default gems
 gem 'rails', '~> 5.1.2'
 gem 'puma', '~> 3.7'
@@ -34,7 +39,7 @@ group :development, :test do
   gem 'selenium-webdriver'
 
   # Active Record
-  gem 'sqlite3', '1.3.13'
+
 end
 
 group :development do
